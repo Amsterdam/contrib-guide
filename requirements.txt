@@ -1,0 +1,10 @@
+backports.ssl-match-hostname==3.5.0.1
+certifi==2017.1.23
+ghp-import==0.5.4
+Jinja2==2.9.5
+livereload==2.5.1
+Markdown==2.6.8
+MarkupSafe==0.23
+mkdocs==0.16.1
+PyYAML==3.12
+tornado==4.4.2
