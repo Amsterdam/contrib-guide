@@ -9,7 +9,19 @@ The general project structure and top-level pieces
 
 Up till now we use the nap_meetbouten project as an example foor the setup of new django projects
 
-## Changelog
+## Project behaviour
+
+every project should get jumpstarted by doing a checkout followed by
+    
+    docker-compose up
+    
+## Download data into your test database
+
+    docker-compose exec database update-db bag
+    
+Will download the current production `bag` database in your project database
+
+## Changelog (not used yet..)
 
 Before each release, make sure `changelog.rst` is updated. For each new feature
 and bugfix, include one short line. The purpose of the changelog is to give a
