@@ -17,8 +17,10 @@ If there is an open question the team must decide on, consider adding a todo:
 ```bash
 git clone ssh://git@github.com:DatapuntAmsterdam/nap_meetbouten.git/style-guide.git
 cd style-guide
-docker build -t style-guide .
-docker run -it 
+pip install virtualenv
+virtualenv .
+./bin/pip install -r requirements.txt
+./bin/mkdocs serve
 ```
 
 Now you can edit the files under `docs/` and [see the
