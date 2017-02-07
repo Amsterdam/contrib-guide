@@ -99,6 +99,8 @@ are the highest on top. So standard library imports like `os`, `system` etc. go
 on top. Then come imports from installed packages; `django`, `celery` etc. and
 finally that belong to the current project.
 
+Prefer one line for one import
+
 ## Libraries
 
 Before adding a new library, consider the long-term maintenance cost and risk
@@ -111,7 +113,7 @@ We have agreed that the following Python libraries are definitely worth it:
 - Django
 - Django REST Framework
 - Flask
-- 
+- Swagger / OpenAPI
 
 ## Naming
 
