@@ -66,4 +66,4 @@ What is the responsibility of the code reviewer?
 - **Does the code do what is should do** -- run the code and see if it does not do weird things like downloading the internet.
 - **Check that code endpoints and parameters are sufficiently tested** -- there should be minumum amount of health checks
 - **Debug mode / health checks** -- Common security mistakes should be checked.
-- **
+- **Decide for yourself if you could maintain and bugfix the code you see**
