@@ -1,4 +1,30 @@
 
+## Meta Guide line.
+
+The human brain is the most important computer. That is the 'AVERAGE' human brain
+not 'your' super-human brain. The brains of your collegues should easily comprehend your
+code.
+
+The average brain can only rememeber about 7 items at the same time. A 'smart' 
+person about 13. https://phys.org/news/2009-11-brain-magic.html
+Your code should be readable after sleepless night.
+The goal is to write code that is easily readable and easy to follow and easy to comprehend
+and therefore does not contain bugs.
+
+- **most developer time is lost chasing bugs**
+
+How to avoid bugs? Learn about the limits of the average brain.
+The following rules of thumb should be followed to avoid bugs and have 
+happy collegues and easy to maintain code.
+
+- functions should not contain more then 7 variables.
+- functions can NOT not be longer then 25 Lines Of Code (LOC).
+- functions should be around max ~10-15 lines.
+- DO NOT USE abbreviations. abbreviations make you think. loosing you brain cycles.
+- autocomplete your long and `readable_variable_names`. do nog use `rd_vr_name`.
+- **functions should do 1 thing **
+- Write a docstring for every function. if you do use AND ... AND split the function up.
+
 Common coding guidelines
 
 ## Line Length
@@ -14,6 +40,7 @@ of text and some developers like to have two windows open side-by-side.
 - keep files under 1000 lines
 - delete any commented-out code without a clear meta-comment about why it's
   good to keep it around
+- identation more the 3 deep should be avoided.
 
 ## Architecture / Design
 
@@ -36,3 +63,7 @@ What is the responsibility of the code reviewer?
 - **Efficiency** — will things scale and still be responsive?
 - **Readability** — can you understand what's going on?
 - **Requirements** — does the commit fulfill the requirements of the ticket
+- **Does the code do what is should do** -- run the code and see if it does not do weird things like downloading the internet.
+- **Check that code endpoints and parameters are sufficiently tested** -- there should be minumum amount of health checks
+- **Debug mode / health checks** -- Common security mistakes should be checked.
+- **
