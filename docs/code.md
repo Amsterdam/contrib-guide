@@ -1,9 +1,9 @@
 
 ## Meta Guide line.
 
-The human brain is the most important computer. That is the 'AVERAGE' human brain
-not 'your' super-human brain. The brains of your collegues should easily comprehend your
-code.
+The human brain is the most important computer. That is the `AVERAGE` human brain
+not your `super-human` brain. The brains of your collegues should be able to easily 
+comprehend your code.
 
 The average brain can only rememeber about 7 items at the same time. A 'smart' 
 person about 13. https://phys.org/news/2009-11-brain-magic.html
@@ -19,11 +19,11 @@ happy collegues and easy to maintain code.
 
 - functions should not contain more then 7 variables.
 - functions can NOT not be longer then 25 Lines Of Code (LOC).
-- functions should be around max ~10-15 lines.
-- DO NOT USE abbreviations. abbreviations make you think. loosing you brain cycles.
+- functions should be around **max ~10-15** lines.
+- **DO NOT USE abbreviations**. abbreviations make you think. loosing you brain cycles.
 - autocomplete your long and `readable_variable_names`. do nog use `rd_vr_name`.
 - **functions should do 1 thing **
-- Write a docstring for every function. if you do use AND ... AND split the function up.
+- Write a docstring for every function. if you use AND ... AND split the function up.
 
 Common coding guidelines
 
