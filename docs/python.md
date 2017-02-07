@@ -114,6 +114,9 @@ We have agreed that the following Python libraries are definitely worth it:
 - Django REST Framework
 - Flask
 - Swagger / OpenAPI
+- psycopg2
+- elasticsearch
+- elasticsearch-dsl
 
 ## Naming
 
