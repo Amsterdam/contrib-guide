@@ -1,5 +1,13 @@
 The general project structure and top-level pieces
 
+Projects are developed around datasets. Developers have large freedom to build their api 
+and import procedures. Projects should never get really large. The should be a 
+small `service` which is replaceble in a couple
+of weeks and does not have dependencies on ohter projects.
+
+- deployement of a project should be standalone. if other services are down on broken.
+  your service / project should dpeloy just fine.
+
 ## Tools
 
 - [Github](https://github.com/DatapuntAmsterdam/): source control
@@ -11,11 +19,11 @@ Up till now we use the nap_meetbouten project as an example foor the setup of ne
 
 ## Project behaviour
 
-every project should get jumpstarted by doing a checkout followed by
+every project should get jumpstarted by doing a `git checkout` followed by
     
     docker-compose up
     
-## Download data into your test database
+## Download production data into your project docker database
 
     docker-compose exec database update-db bag
     
