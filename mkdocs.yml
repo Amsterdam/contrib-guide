@@ -1,10 +1,10 @@
 site_name: Style Guide Datapunt Amsterdam
 pages:
-    - [index.md, Introduction]
-    - [projects.md, Projects]
-    - [python.md, Python]
-    - [code.md, Code]
-    - [self.md, Self]
+    - Introduction: 'index.md'
+    - Projects: 'projects.md'
+    - Python: 'python.md'
+    - Code: 'code.md'
+    - Self: 'self.md'
 site_url: http:///style-guide/
 repo_url: https://github.com/DatapuntAmsterdam/style-guide/
 site_favicon: favicon.png
