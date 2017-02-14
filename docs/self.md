@@ -1,9 +1,9 @@
 
-This page is about maintaining this style guide itself.
+This page is about maintaining this Contributing Guide itself.
 
 ## What do add?
 
-For this style guide to stay useful it needs to be reasonably complete,
+For this contrib guide to stay useful it needs to be reasonably complete,
 easy to navigate and concise. So we don't need to mention obvious things.
 
 Try to include examples, an explaination of why, and screenshots if it helps.
@@ -15,8 +15,8 @@ If there is an open question the team must decide on, consider adding a todo:
 ## Getting started locally
 
 ```bash
-git clone ssh://git@github.com:DatapuntAmsterdam/nap_meetbouten.git/style-guide.git
-cd style-guide
+git clone ssh://git@github.com:DatapuntAmsterdam/contrib-guide.git
+cd contrib-guide
 pip install virtualenv
 virtualenv .
 ./bin/pip install -r requirements.txt
