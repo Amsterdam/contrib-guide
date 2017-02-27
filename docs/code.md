@@ -7,20 +7,23 @@ comprehend your code.
 
 The average brain can only rememeber about 7 items at the same time. A 'smart' 
 person about 13. https://phys.org/news/2009-11-brain-magic.html
-Your code should be readable after sleepless night.
-The goal is to write code that is easily readable and easy to follow and easy to comprehend
-and therefore does not contain bugs.
+Your code should be readable after a sleepless crazy wild night.
 
 - **most developer time is lost chasing bugs**
 
-How to avoid bugs? Learn about the limits of the average brain.
+The goal is to avoid BUG. Writing code to avoid bug will ALSO lead to code 
+that is easily readable and easy to follow, easy to comprehend 
+and therefore does not contain bugs. 
+
+How to avoid bugs? Learn about the limits of the average brain, the
+most important computer.
 The following rules of thumb should be followed to avoid bugs and have 
 happy collegues and easy to maintain code.
 
 - functions should not contain more then 7 variables.
 - functions can NOT not be longer then 25 Lines Of Code (LOC).
 - functions should be around **max ~10-15** lines.
-- **DO NOT USE abbreviations**. abbreviations make you think. loosing you brain cycles.
+- **DO NOT USE abbreviations**. abbreviations make you think. losing precious brain cycles.
 - autocomplete your long and `readable_variable_names`. do nog use `rd_vr_name`.
 - **functions should do 1 thing **
 - Write a docstring for every function. if you use AND ... AND split the function up.
@@ -29,8 +32,7 @@ Common coding guidelines
 
 ## Line Length
 
-Prefer lines under 80 characters, but if it increases readability don't be
-afraid to go up to 120 characters. Even longer lines should be marked as errors
+Prefer lines under 80 characters. the absolute exception Even longer lines should be marked as errors
 by a linter tool. Keep in mind that humans are better at reading narrow columns
 of text and some developers like to have two windows open side-by-side.
 
