@@ -1,6 +1,7 @@
 # Goal
 
-Here are the style and coding guidelines for the Datapunt Amsterdam team.
+Here are the guidelines for the Datapunt Amsterdam team. This guide covers
+everything you need to know to succesfully start contributing to the datapunt team.
 The goal of this document is to formalize the agreements for designs, code
 reviews and whatever else we collaborate on.
 
