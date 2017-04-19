@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Introduction\n\n\nThis guide covers everything you need to succesfully start contributing to \n\nDatapunt\n. It formalizes coding styles, procedures, and all other things we\nagree (to disagree) upon.\n\n\n\n\nReferring to this guide\n\n\nPlease refer to this document whenever applicable, eg. while performing\n\ncode reviews\n and \nacceptance tests\n. If there are differing opinions\nabout which direction to take or style to use, you can refer to a section\nin this document. For example, a comment might look like:\n\n\n\n\nThere is a missing docstring. We agreed that all new\nclasses will contain at least a one liner. See section\n\ndocstrings\n\nin the style guide.\n\n\n\n\nThe canonical URL of this documentation is\n\nhttps://datapuntamsterdam.github.io/contrib-guide/\n\n\nContributing to this guide\n\n\nWhat to add?\n\n\nFor this contrib guide to stay useful it needs to be reasonably complete,\neasy to navigate and concise. So we don't need to mention obvious things.\n\n\nTry to include examples, an explaination of why, and screenshots if it helps.\n\n\nIf there is an open question the team must decide on, consider adding a todo:\n\n\n\n\nTODO: decide upon the color of our uniforms\n\n\n\n\nGetting started locally\n\n\ngit clone ssh://git@github.com:DatapuntAmsterdam/contrib-guide.git\ncd contrib-guide\npip install virtualenv\nvirtualenv .\n./bin/pip install -r requirements.txt\nmake docserver\n\n\n\n\nThis starts an HTTP-server on \nport 8000\n. All changes\nyou make in the \ndocs\n directory are visible there immediately.\n\n\nTo update dependencies:\n\n\nPlease don\u2019t pollute \nrequirements.txt\n by running\n\npip freeze >requirements.txt\n. Instead, only add/list top-level dependencies:\n\n\necho some_package >>requirements.txt\n./bin/pip install -r requirements.txt\n\n\n\n\nTo make a change\n\n\n\n\nCreate a branch\n\n\nEdit the docs locally\n\n\nCommit and push the branch\n\n\nCreate a pull request\n\n\nAfter review, merge the branch into master\n\n\n\n\nSee Also\n\n\n\n\nMkDocs\n\n\n\n\nMarkdown Syntax according to:\n\n\n\n\nDaring Fireball\n\n\nStack Overflow",
+            "text": "Introduction\n\n\nThis guide covers everything you need to succesfully start contributing to \n\nDatapunt\n. It formalizes coding styles, procedures, and all other things we\nagree (to disagree) upon.\n\n\n\n\nReferring to this guide\n\n\nPlease refer to this document whenever applicable, eg. while performing\n\ncode reviews\n and \nacceptance tests\n. If there are differing opinions\nabout which direction to take or style to use, you can refer to a section\nin this document. For example, a comment might look like:\n\n\n\n\nThere is a missing docstring. We agreed that all new\nclasses will contain at least a one liner. See section\n\ndocstrings\n\nin the style guide.\n\n\n\n\nThe canonical URL of this documentation is\n\nhttps://datapuntamsterdam.github.io/contrib-guide/\n\n\nContributing to this guide\n\n\nWhat to add?\n\n\nFor this contrib guide to stay useful it needs to be reasonably complete,\neasy to navigate and concise. So we don't need to mention obvious things.\n\n\nTry to include examples, an explaination of why, and screenshots if it helps.\n\n\nIf there is an open question the team must decide on, consider adding a todo:\n\n\n\n\nTODO: decide upon the color of our uniforms\n\n\n\n\nGetting started locally\n\n\ngit clone ssh://git@github.com:DatapuntAmsterdam/contrib-guide.git\ncd contrib-guide\npip install virtualenv\nvirtualenv .\n./bin/pip install -r requirements.txt\nmake docserver\n\n\n\n\nThis starts an HTTP-server on \nport 8000\n. All changes\nyou make in the \ndocs\n directory are visible there immediately.\n\n\nTo update dependencies:\n\n\nPlease don\u2019t pollute \nrequirements.txt\n by running\n\npip freeze >requirements.txt\n. Instead, only add/list top-level dependencies:\n\n\necho some_package >>requirements.txt\n./bin/pip install -r requirements.txt\n\n\n\n\nTo make a change\n\n\n\n\nCreate a branch\n\n\nEdit the docs locally\n\n\nCommit and push the branch\n\n\nCreate a pull request\n\n\nAfter review, merge the branch into master\n\n\n\n\nSee Also\n\n\n\n\nMkDocs documentation\n\n\nMarkdown Syntax\n according to:\n\n\nDaring Fireball\n\n\nStack Overflow",
             "title": "Introduction"
         },
         {
@@ -42,38 +42,8 @@
         },
         {
             "location": "/#see-also",
-            "text": "MkDocs   Markdown Syntax according to:   Daring Fireball  Stack Overflow",
+            "text": "MkDocs documentation  Markdown Syntax  according to:  Daring Fireball  Stack Overflow",
             "title": "See Also"
-        },
-        {
-            "location": "/projects/",
-            "text": "The general project structure and top-level pieces\n\n\nProjects are developed around datasets. Developers have large freedom to build their api \nand import procedures. Projects should never get really large. The should be a \nsmall \nservice\n which is replaceble in a couple\nof weeks and does not have dependencies on ohter projects.\n\n\n\n\ndeployement of a project should be standalone. if other services are down on broken.\n  your service / project should dpeloy just fine.\n\n\n\n\nTools\n\n\n\n\nGithub\n: source control\n\n\nJenkins\n: continuous deployment\n\n\n\n\nProject Template\n\n\nUp till now we use the nap_meetbouten project as an example foor the setup of new django projects\n\n\nProject behaviour\n\n\nevery project should get jumpstarted by doing a \ngit checkout\n followed by\n\n\ndocker-compose up\n\n\n\nDownload production data into your project docker database\n\n\ndocker-compose exec database update-db bag\n\n\n\nWill download the current production \nbag\n database in your project database\n\n\nChangelog (not used yet..)\n\n\nBefore each release, make sure \nchangelog.rst\n is updated. For each new feature\nand bugfix, include one short line. The purpose of the changelog is to give a\nquick overview, not to duplicate the git commit log.",
-            "title": "Projects"
-        },
-        {
-            "location": "/projects/#tools",
-            "text": "Github : source control  Jenkins : continuous deployment",
-            "title": "Tools"
-        },
-        {
-            "location": "/projects/#project-template",
-            "text": "Up till now we use the nap_meetbouten project as an example foor the setup of new django projects",
-            "title": "Project Template"
-        },
-        {
-            "location": "/projects/#project-behaviour",
-            "text": "every project should get jumpstarted by doing a  git checkout  followed by  docker-compose up",
-            "title": "Project behaviour"
-        },
-        {
-            "location": "/projects/#download-production-data-into-your-project-docker-database",
-            "text": "docker-compose exec database update-db bag  Will download the current production  bag  database in your project database",
-            "title": "Download production data into your project docker database"
-        },
-        {
-            "location": "/projects/#changelog-not-used-yet",
-            "text": "Before each release, make sure  changelog.rst  is updated. For each new feature\nand bugfix, include one short line. The purpose of the changelog is to give a\nquick overview, not to duplicate the git commit log.",
-            "title": "Changelog (not used yet..)"
         },
         {
             "location": "/coding/",
@@ -104,6 +74,41 @@
             "location": "/coding/#reviews",
             "text": "What is the responsibility of the code reviewer?   Style  \u2014 identify discrepancies from this guide  Potential Bugs  \u2014 try to think about what might break  Error Handling  \u2014 if something external can cause an exception, how will\n  the user experience it?  Efficiency  \u2014 will things scale and still be responsive?  Readability  \u2014 can you understand what's going on?  Requirements  \u2014 does the commit fulfill the requirements of the ticket  Does the code do what is should do  -- run the code and see if it does not do weird things like downloading the internet.  Check that code endpoints and parameters are sufficiently tested  -- there should be minumum amount of health checks  Debug mode / health checks  -- Common security mistakes should be checked.  Decide for yourself if you could maintain and bugfix the code you see",
             "title": "Reviews"
+        },
+        {
+            "location": "/coding/projects/",
+            "text": "Common project structure\n\n\nProjects are developed around datasets. Developers have large freedom to build their api \nand import procedures. Projects should never get really large. The should be a \nsmall \nservice\n which is replaceble in a couple\nof weeks and does not have dependencies on ohter projects.\n\n\n\n\ndeployement of a project should be standalone. if other services are down on broken.\n  your service / project should dpeloy just fine.\n\n\n\n\nTools\n\n\n\n\nGithub\n: source control\n\n\nJenkins\n: continuous deployment\n\n\n\n\nProject Template\n\n\nUp till now we use the nap_meetbouten project as an example foor the setup of new django projects\n\n\nProject behaviour\n\n\nevery project should get jumpstarted by doing a \ngit checkout\n followed by\n\n\ndocker-compose up\n\n\n\nDownload production data into your project docker database\n\n\ndocker-compose exec database update-db bag\n\n\n\nWill download the current production \nbag\n database in your project database\n\n\nChangelog (not used yet..)\n\n\nBefore each release, make sure \nchangelog.rst\n is updated. For each new feature\nand bugfix, include one short line. The purpose of the changelog is to give a\nquick overview, not to duplicate the git commit log.",
+            "title": "Project structure"
+        },
+        {
+            "location": "/coding/projects/#common-project-structure",
+            "text": "Projects are developed around datasets. Developers have large freedom to build their api \nand import procedures. Projects should never get really large. The should be a \nsmall  service  which is replaceble in a couple\nof weeks and does not have dependencies on ohter projects.   deployement of a project should be standalone. if other services are down on broken.\n  your service / project should dpeloy just fine.",
+            "title": "Common project structure"
+        },
+        {
+            "location": "/coding/projects/#tools",
+            "text": "Github : source control  Jenkins : continuous deployment",
+            "title": "Tools"
+        },
+        {
+            "location": "/coding/projects/#project-template",
+            "text": "Up till now we use the nap_meetbouten project as an example foor the setup of new django projects",
+            "title": "Project Template"
+        },
+        {
+            "location": "/coding/projects/#project-behaviour",
+            "text": "every project should get jumpstarted by doing a  git checkout  followed by  docker-compose up",
+            "title": "Project behaviour"
+        },
+        {
+            "location": "/coding/projects/#download-production-data-into-your-project-docker-database",
+            "text": "docker-compose exec database update-db bag  Will download the current production  bag  database in your project database",
+            "title": "Download production data into your project docker database"
+        },
+        {
+            "location": "/coding/projects/#changelog-not-used-yet",
+            "text": "Before each release, make sure  changelog.rst  is updated. For each new feature\nand bugfix, include one short line. The purpose of the changelog is to give a\nquick overview, not to duplicate the git commit log.",
+            "title": "Changelog (not used yet..)"
         },
         {
             "location": "/coding/python/",

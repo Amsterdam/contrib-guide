@@ -10,17 +10,15 @@
     
 
     
-    <url>
-     <loc>https://datapuntamsterdam.github.io/contrib-guide//projects/</loc>
-     <lastmod>2017-04-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
         
     <url>
      <loc>https://datapuntamsterdam.github.io/contrib-guide//coding/</loc>
+     <lastmod>2017-04-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://datapuntamsterdam.github.io/contrib-guide//coding/projects/</loc>
      <lastmod>2017-04-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
