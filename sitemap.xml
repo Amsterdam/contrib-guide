@@ -18,27 +18,19 @@
     
 
     
+        
     <url>
-     <loc>https://datapuntamsterdam.github.io/contrib-guide//python/</loc>
+     <loc>https://datapuntamsterdam.github.io/contrib-guide//coding/</loc>
      <lastmod>2017-04-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
+        
     <url>
-     <loc>https://datapuntamsterdam.github.io/contrib-guide//code/</loc>
+     <loc>https://datapuntamsterdam.github.io/contrib-guide//coding/python/</loc>
      <lastmod>2017-04-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-    <url>
-     <loc>https://datapuntamsterdam.github.io/contrib-guide//self/</loc>
-     <lastmod>2017-04-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
+        
     
 
 </urlset>

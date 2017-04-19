@@ -9,7 +9,7 @@
         <link rel="canonical" href="https://datapuntamsterdam.github.io/contrib-guide/">
         <link rel="shortcut icon" href="./favicon.png">
         
-        <title>Contributing to Datapunt</title>
+        <title>Contributing</title>
         <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="./css/base.css" rel="stylesheet">
@@ -39,7 +39,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href=".">Contributing to Datapunt</a>
+            <a class="navbar-brand" href=".">Contributing</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -52,14 +52,18 @@
                     <li >
                         <a href="projects/">Projects</a>
                     </li>
-                    <li >
-                        <a href="python/">Python</a>
-                    </li>
-                    <li >
-                        <a href="code/">Code</a>
-                    </li>
-                    <li >
-                        <a href="self/">Self</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Coding <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="coding/">General</a>
+</li>
+                            
+<li >
+    <a href="coding/python/">Python</a>
+</li>
+                        </ul>
                     </li>
                 </ul>
 
@@ -92,32 +96,80 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#goal">Goal</a></li>
-        <li class="main "><a href="#how-to-use">How to Use</a></li>
-        <li class="main "><a href="#how-to-update">How to Update</a></li>
+        <li class="main active"><a href="#introduction">Introduction</a></li>
+            <li><a href="#referring-to-this-guide">Referring to this guide</a></li>
+        <li class="main "><a href="#contributing-to-this-guide">Contributing to this guide</a></li>
+            <li><a href="#what-to-add">What to add?</a></li>
+            <li><a href="#getting-started-locally">Getting started locally</a></li>
+            <li><a href="#to-update-dependencies">To update dependencies:</a></li>
+            <li><a href="#to-make-a-change">To make a change</a></li>
+            <li><a href="#see-also">See Also</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="goal">Goal</h1>
-<p>Here are the guidelines for the Datapunt Amsterdam team. This guide covers
-everything you need to succesfully start contributing to the datapunt team.
-The goal of this document is to formalize the agreements for designs, code
-reviews and whatever else we collaborate on.</p>
-<h1 id="how-to-use">How to Use</h1>
-<p>Please refer to this document when performing code reviews, especially if there
-are differing opinions about which direction to take or style to use. You can
-refer to a section in this document for clarity. For example, a comment might
-look like:</p>
+<h1 id="introduction">Introduction</h1>
+<p>This guide covers everything you need to succesfully start contributing to 
+<strong>Datapunt</strong>. It formalizes coding styles, procedures, and all other things we
+agree (to disagree) upon.</p>
+<hr />
+<h2 id="referring-to-this-guide">Referring to this guide</h2>
+<p>Please refer to this document whenever applicable, eg. while performing
+<em>code reviews</em> and <em>acceptance tests</em>. If there are differing opinions
+about which direction to take or style to use, you can refer to a section
+in this document. For example, a comment might look like:</p>
 <blockquote>
-<p>There is a missing docstring. We agreed that all new classes will contain at
-  least a one liner. See section <a href="http://{server}/docs/style-guide/en/latest/python/#docstrings">docstrings</a>
-  in the style guide.</p>
+<p>There is a missing docstring. We agreed that all new
+classes will contain at least a one liner. See section
+<a href="https://datapuntamsterdam.github.io/contrib-guide/coding/python/#documentation">docstrings</a>
+in the style guide.</p>
 </blockquote>
-<h1 id="how-to-update">How to Update</h1>
-<p>This is supposed to be a living, breathing document. If a couple developers on
-the team want to add or modify a section, follow the guidelines in
-<a href="self/">Self</a>.</p></div>
+<p>The canonical URL of this documentation is
+<a href="https://datapuntamsterdam.github.io/contrib-guide/">https://datapuntamsterdam.github.io/contrib-guide/</a></p>
+<h1 id="contributing-to-this-guide">Contributing to this guide</h1>
+<h2 id="what-to-add">What to add?</h2>
+<p>For this contrib guide to stay useful it needs to be reasonably complete,
+easy to navigate and concise. So we don't need to mention obvious things.</p>
+<p>Try to include examples, an explaination of why, and screenshots if it helps.</p>
+<p>If there is an open question the team must decide on, consider adding a todo:</p>
+<blockquote>
+<p><em>TODO: decide upon the color of our uniforms</em></p>
+</blockquote>
+<h2 id="getting-started-locally">Getting started locally</h2>
+<pre><code class="bash">git clone ssh://git@github.com:DatapuntAmsterdam/contrib-guide.git
+cd contrib-guide
+pip install virtualenv
+virtualenv .
+./bin/pip install -r requirements.txt
+make docserver
+</code></pre>
+
+<p>This starts an HTTP-server on <a href="http://localhost:8000">port 8000</a>. All changes
+you make in the <code>docs</code> directory are visible there immediately.</p>
+<h2 id="to-update-dependencies">To update dependencies:</h2>
+<p>Please don’t pollute <code>requirements.txt</code> by running
+<code>pip freeze &gt;requirements.txt</code>. Instead, only add/list top-level dependencies:</p>
+<pre><code class="bash">echo some_package &gt;&gt;requirements.txt
+./bin/pip install -r requirements.txt
+</code></pre>
+
+<h2 id="to-make-a-change">To make a change</h2>
+<ol>
+<li>Create a branch</li>
+<li>Edit the docs locally</li>
+<li>Commit and push the branch</li>
+<li>Create a pull request</li>
+<li>After review, merge the branch into master</li>
+</ol>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="http://mkdocs.org">MkDocs</a></li>
+</ul>
+<p>Markdown Syntax according to:</p>
+<ul>
+<li><a href="http://daringfireball.net/projects/markdown/syntax">Daring Fireball</a></li>
+<li><a href="http://stackoverflow.com/editing-help">Stack Overflow</a></li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
@@ -156,5 +208,5 @@ the team want to add or modify a section, follow the guidelines in
 
 <!--
 MkDocs version : 0.16.1
-Build Date UTC : 2017-04-19 09:57:11
+Build Date UTC : 2017-04-19 11:43:15
 -->
