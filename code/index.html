@@ -1,150 +1,116 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  <link rel="shortcut icon" href="../favicon.png">
-  
-  <title>Code - Contributing to Datapunt</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../css/highlight.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Code";
-    var mkdocs_page_input_path = "code.md";
-    var mkdocs_page_url = "/code/";
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js"></script>
-  <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Contributing to Datapunt</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Introduction</a>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../projects/">Projects</a>
         
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../python/">Python</a>
+        <link rel="canonical" href="https://datapuntamsterdam.github.io/contrib-guide/code/">
+        <link rel="shortcut icon" href="../favicon.png">
         
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Code</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#meta-guide-line">Meta Guide line.</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#line-length">Line Length</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#layout">Layout</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#architecture-design">Architecture / Design</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#reviews">Reviews</a></li>
-                
-            
+        <title>Code - Contributing to Datapunt</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">Contributing to Datapunt</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Introduction</a>
+                    </li>
+                    <li >
+                        <a href="../projects/">Projects</a>
+                    </li>
+                    <li >
+                        <a href="../python/">Python</a>
+                    </li>
+                    <li class="active">
+                        <a href="./">Code</a>
+                    </li>
+                    <li >
+                        <a href="../self/">Self</a>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../python/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../self/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/DatapuntAmsterdam/contrib-guide/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
             </ul>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../self/">Self</a>
-        
-    </li>
-<li>
-          
-        </ul>
-      </div>
-      &nbsp;
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Contributing to Datapunt</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>Code</li>
-    <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/DatapuntAmsterdam/style-guide/edit/master/docs/code.md"
-          class="icon icon-github"> Edit on GitHub</a>
-      
-    </li>
-  </ul>
-  <hr/>
+        </div>
+    </div>
 </div>
-          <div role="main">
-            <div class="section">
-              
-                <h2 id="meta-guide-line">Meta Guide line.</h2>
-<p>The human brain is the most important computer. That is the <code>AVERAGE</code> human brain
-not your <code>super-human</code> brain. The brains of your collegues should be able to easily 
-comprehend your code.</p>
-<p>The average brain can only rememeber about 7 items at the same time. A 'smart' 
-person about 13. https://phys.org/news/2009-11-brain-magic.html
-Your code should be readable after a sleepless crazy wild night.</p>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#meta-guide-line">Meta Guide line.</a></li>
+        <li class="main "><a href="#common-coding-guidelines">Common coding guidelines</a></li>
+            <li><a href="#line-length">Line Length</a></li>
+            <li><a href="#layout">Layout</a></li>
+            <li><a href="#architecture-design">Architecture / Design</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="meta-guide-line">Meta Guide line.</h2>
 <ul>
-<li><strong>most developer time is lost chasing bugs</strong></li>
+<li>The subgenius brains of your collegues should be able to easily comprehend
+    your code.</li>
+<li>Your code should be readable after a sleepless crazy wild night.</li>
+<li>Most developer time is lost chasing bugs.</li>
+<li>Debugging existing code is harder than writing new code. That brilliant,
+    super-dense code that took all your genius to write? You won't be able to
+    debug it.</li>
 </ul>
 <p>The goal is to avoid BUG. Writing code to avoid bug will ALSO lead to code 
 that is easily readable and easy to follow, easy to comprehend 
@@ -157,12 +123,14 @@ happy collegues and easy to maintain code.</p>
 <li>functions should not contain more then 7 variables.</li>
 <li>functions can NOT not be longer then 25 Lines Of Code (LOC).</li>
 <li>functions should be around <strong>max ~10-15</strong> lines.</li>
-<li><strong>DO NOT USE abbreviations</strong>. abbreviations make you think. losing precious brain cycles.</li>
+<li><strong>DO NOT USE abbreviations</strong>. abbreviations make you think. losing precious 
+  brain cycles.</li>
 <li>autocomplete your long and <code>readable_variable_names</code>. do nog use <code>rd_vr_name</code>.</li>
-<li><strong>functions should do 1 thing </strong></li>
-<li>Write a docstring for every function. if you use AND ... AND split the function up.</li>
+<li>functions should do <strong>1 thing</strong></li>
+<li><strong>Write a docstring</strong> for every function. if you use AND ... AND split the 
+  function up.</li>
 </ul>
-<p>Common coding guidelines</p>
+<h1 id="common-coding-guidelines">Common coding guidelines</h1>
 <h2 id="line-length">Line Length</h2>
 <p>Prefer lines under 80 characters. the absolute exception Even longer lines should be marked as errors
 by a linter tool. Keep in mind that humans are better at reading narrow columns
@@ -199,53 +167,39 @@ of text and some developers like to have two windows open side-by-side.</p>
 <li><strong>Check that code endpoints and parameters are sufficiently tested</strong> -- there should be minumum amount of health checks</li>
 <li><strong>Debug mode / health checks</strong> -- Common security mistakes should be checked.</li>
 <li><strong>Decide for yourself if you could maintain and bugfix the code you see</strong></li>
-</ul>
-              
-            </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../self/" class="btn btn-neutral float-right" title="Self">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../python/" class="btn btn-neutral" title="Python"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-	  
+</ul></div>
         </div>
-      </div>
 
-    </section>
-    
-  </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-          <a href="https://github.com/DatapuntAmsterdam/style-guide/" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-      
-      
-        <span><a href="../python/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../self/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-    <script src="../js/theme.js"></script>
 
-</body>
+    </body>
 </html>
