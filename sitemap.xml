@@ -3,32 +3,42 @@
 
     
     <url>
-     <loc>https://datapuntamsterdam.github.io/contrib-guide//</loc>
-     <lastmod>2017-04-19</lastmod>
+     <loc>http:///contributing//</loc>
+     <lastmod>2017-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
-        
     <url>
-     <loc>https://datapuntamsterdam.github.io/contrib-guide//coding/</loc>
-     <lastmod>2017-04-19</lastmod>
+     <loc>http:///contributing//projects/</loc>
+     <lastmod>2017-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
+    
+
+    
     <url>
-     <loc>https://datapuntamsterdam.github.io/contrib-guide//coding/projects/</loc>
-     <lastmod>2017-04-19</lastmod>
+     <loc>http:///contributing//python/</loc>
+     <lastmod>2017-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
+    
+
+    
     <url>
-     <loc>https://datapuntamsterdam.github.io/contrib-guide//coding/python/</loc>
-     <lastmod>2017-04-19</lastmod>
+     <loc>http:///contributing//code/</loc>
+     <lastmod>2017-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
+    
+
+    
+    <url>
+     <loc>http:///contributing//self/</loc>
+     <lastmod>2017-10-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
     
 
 </urlset>
